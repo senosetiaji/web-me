@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+  section{
+    padding: 25px 10px;
+  }
+  .header-content{
+    > .svg-me{
+      width: 200px;
+      height: 200px;
+      >svg{
+        width: 200px !important;
+        height: 200px !important;
+      }
+    }
+    > h1.header-text{ margin-top: 45px; font-size: 22px;}
+  }
+  .portfolio-me--list{
+    width: 100%;
+  }
+  .contact-me{ margin-top: 120px; margin-bottom: 250px; }
+  .contact-box > h2 { font-size: 18px; }
+  .contact-box a { font-size: 18px; }
+  #darkmode:checked + main > .header-content > .highlight{
+    width: 225px;
+    height: 225px;
+  }
+  .footer-section{
+    font-size: 12px;
+  }
+}

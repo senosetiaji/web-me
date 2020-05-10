@@ -1,0 +1,321 @@
+// @import 'node_modules/sass-font-face/_font-face';
+// @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@font-face {
+  font-family: AzoSans;
+  src: url("fonts/AzoSans-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+$font-regular: AzoSans;
+$primary        : #FFFFFF;
+$secondary      : #ED1C24; 
+$rd-color      : #242A33;
+h1 { font-size: 27px; font-weight: lighter; }
+h2 { font-size: 23px; font-weight: lighter; }
+p,a { font-size: 18px; text-decoration: none; }
+a{color: $secondary;}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  scrollbar-width: thin;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body{
+  font-family: $font-regular;
+  margin: 0;
+}
+:root{
+  --bg-color: white;
+  --text-color: #000;
+}
+main{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+#darkmode:checked + main{
+  --bg-color: #26242e;
+  --text-color: #fff;
+  transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+#darkmode:checked + main > nav > .top-menu > .labels > .rounded::after{
+  transform: translateX(22px);
+  transition: all .5s ease-in-out;
+}
+#darkmode:checked + main > .header-content > .svg-me > svg > #eye-bottom-layer{
+  transform: translateY(-80px);
+  transition: all .5s ease-in-out;
+}
+#darkmode:checked + main > .header-content > .svg-me > svg > #eye-top-layer{
+  transform: translateY(36px);
+  transition: all .5s ease-in-out;
+}
+#darkmode:checked + main > .header-content > .svg-me > svg > #layer-mouth{
+  transform: translateY(10px);
+  transition: all .5s ease-in-out;
+}
+#darkmode:checked + main > .header-content > .highlight{
+  width: 450px;
+  height: 450px;
+}
+#darkmode:checked + main > .header-content > .svg-me:hover{
+  svg > #eye-top-layer{
+    transform: translateY(0px);
+    transition: all .5s ease-in-out;
+  }
+  svg > #eye-bottom-layer{
+    transform: translateY(0px);
+    transition: all .5s ease-in-out;
+  }
+  svg > #layer-mouth{
+    transform: translateY(0px);
+    transition: all .5s ease-in-out;
+  }
+}
+#darkmode:checked + main > .header-content > .highlight{
+  top: 65px;
+  background: rgba($color: #fae35e, $alpha: 1.0);
+  // transition: all 1s ease-in-out;
+  animation-name: highlight;
+  animation-delay: 1s;
+  animation-duration: .25s;
+  animation-iteration-count: 2;
+}
+@keyframes highlight{
+  0%{ background: rgba($color: #fae35e, $alpha: 1.0); }
+  50%{ background : #26242e; }
+  100%{ background: rgba($color: #fae35e, $alpha: 1.0); }
+}
+#darkmode:checked + main > nav > .top-menu > .labels > .rounded{
+  background-color: $secondary;
+  transition: all .5s ease-in-out;
+}
+.labels{
+  cursor: pointer;
+  position: relative;
+  > span{
+    font-size: 12px;
+    position: absolute;
+    bottom: -23px;
+    left: -4px;
+  }
+  > .rounded{
+    width: 50px;
+    position: relative;
+    border-radius: 15px;
+    background: #ccc;
+    height: 28px;
+    &::after{
+      content: '';
+      position: absolute;
+      left: 4px;
+      transition: all .5s ease-in-out;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $primary;
+    }
+  }
+}
+// top navigation
+nav.top-navigation{
+  display: flex;
+  padding: 13px 25px;
+  justify-content: space-between;
+  align-items: center;
+  // background: red;
+  > a > .logo-me{
+    width: 35px;
+    height: 35px;
+    // background: green;
+    > img{
+      width: 100%;
+    }
+  }
+  > .top-menu{
+    display: flex;
+    align-items: center;
+    > a{
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bolder;
+      > .top-navigation--menu{
+        position: relative;
+        background: rgb(255,81,0);
+        background: linear-gradient(90deg, rgba(255,81,0,1) 0%, rgba(255,0,0,1) 100%);
+        background-size: 3px;
+        background-position: top bottom left;
+        background-repeat: no-repeat;
+        padding: 5px 9px;
+        margin-right: 15px;
+        transition: all ease-in-out .3s;
+        &:hover{
+          background-size: 100%;
+          color: white;
+        }
+      }
+    }
+  }
+}
+// content
+section{
+  min-height: 80vh;
+  padding: 25px 120px;
+}
+.header-content{
+  text-align: center;
+  > .highlight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: transparent;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 0;
+    // transition: all ease-in-out 1s;
+  }
+  > .svg-me{
+    cursor: pointer;
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    svg{
+      z-index: 1;
+    }
+    svg > #big-hair{transition: all ease-in-out .5s;}
+    svg > #layer-mouth{transition: all ease-in-out .5s;}
+    svg > #phone{transition: all ease-in-out .5s;}
+    svg > #phone-body{transition: all ease-in-out .5s;}
+    &:hover {
+      svg > #head {
+        animation-name: headmove;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+      }
+      svg > #big-hair{
+        animation-name: hairwave;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        // transition: all ease-in-out .5s;
+      }
+      svg > #layer-mouth{
+        transform: translate(-7px,-56px);
+        animation-timing-function: ease-in-out;
+        transition: all ease-in-out .5s;
+      }
+      svg > #phone{
+        transform: rotate(-3deg) translateY(-45px);
+        transition: all ease-in-out .5s;
+      }
+      svg > #phone-body{
+        transform: rotate(3deg) translateY(15px);
+        transition: all ease-in-out .5s;
+      }
+    }
+  }
+  @keyframes headmove {
+    0%{ transform: translateY(0px); }
+    50%{ transform: translateY(7px); }
+    100%{ transform: translateY(0px); }
+  }
+  @keyframes hairwave{
+    0% { transform: skewY(0deg); } 
+    50%{ transform: skewY(-2deg); }
+    100% { transform: skewY(0deg); } 
+  }
+  > h1.header-text{
+    text-align: center;
+    letter-spacing: 0;
+    margin-top: 13px;
+  }
+  > a{
+    text-decoration: none;
+    color: #ccc;
+  }
+}
+.portfolio-me{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.portfolio-me--list{
+  width: 23%;
+  height: 230px;
+  overflow: hidden;
+  margin: 25px 15px;
+  background: #fbfbfb;
+  border: 2px solid white;
+  border-radius: 18px;
+  box-shadow: 30px 30px 80px rgba($color: #3a3caa, $alpha: .16), -30px -30px 80px var(--bg-color);
+  position: relative;
+  > a > .portfolio-img{
+    position: absolute;
+    width: 270px;
+    height: 150px;
+    overflow: hidden;
+    background: #f8f8f8a2;
+    // box-shadow: 30px 30px 80px rgba($color: #3a3caa, $alpha: .36), -15px -15px 80px #fff;
+    border-radius: 7px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.contact-box{
+  margin: 75px 0;
+  a{
+    font-size: 23px;
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+footer.footer-section{
+  padding: 25px;
+  text-align: center;
+  color: var(--bg-color);
+  background: var(--text-color);
+}
+.contact-me{
+  text-align: center;
+  margin: 250px 0 180px 0;
+  a{
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+@import 'mediaqueries/media_600.queries.scss'; //css queries
