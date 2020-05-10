@@ -19,7 +19,7 @@
             </svg>
         </div>
         <h1 class="header-text">
-          "Oh, hi! My name is Seno, i'm a <b>web designer</b> and <b>frontend developer too.</b>"
+          "Oh, hi! My name is Seno Setiaji, i'm a <b>web designer</b> and <b>frontend developer too.</b>"
         </h1>
         <a href="#portfolio" aria-label="scroll">
           <p>please check my work below.</p>
