@@ -28,32 +28,32 @@
       <section class="main-content">
         <div class="portfolio-me" id="portfolio">
           <div class="portfolio-me--list">
-            <a href="" aria-label="links">
+            <router-link to="/binmas">
               <div class="portfolio-img">
                 <img src='../assets/images/portfolio/portfolio.png' alt="img-portfolio">
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="portfolio-me--list">
-            <a href="" aria-label="links">
+            <router-link to="/pnbp">
               <div class="portfolio-img">
                 <img src="../assets/images/portfolio/portfolio2.png" alt="img-portfolio">
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="portfolio-me--list">
-            <a href="" aria-label="links">
+            <router-link to="/koperasi">
               <div class="portfolio-img">
                 <img src="../assets/images/portfolio/portfolio3.png" alt="img-portfolio">
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="portfolio-me--list">
-            <a href="" aria-label="links">
+            <router-link to="/docotel">
               <div class="portfolio-img">
                 <img src="../assets/images/portfolio/portfolio4.png" alt="img-portfolio">
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="contact-box">

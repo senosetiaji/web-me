@@ -23,6 +23,21 @@
     width: 225px;
     height: 225px;
   }
+  .contain{
+    padding: 25px;
+    > .portfolio-img{
+      position: relative;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    > .content-description{
+      width: 100%;
+    }
+  }
+  @keyframes headlinePages{
+    0% { width: 100%; }
+    100% { width: 5px; }
+  }
   .footer-section{
     font-size: 12px;
   }
