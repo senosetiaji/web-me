@@ -28,11 +28,11 @@
       <section class="main-content">
         <div class="portfolio-me" id="portfolio">
           <div class="portfolio-me--list">
-            <a href="" aria-label="links">
+            <router-link to="/docotel">
               <div class="portfolio-img">
                 <img src='../assets/images/portfolio/portfolio.png' alt="img-portfolio">
               </div>
-            </a>
+            </router-link>
           </div>
           <div class="portfolio-me--list">
             <a href="" aria-label="links">
