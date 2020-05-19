@@ -5,9 +5,9 @@
       <topNavigation />
       <div class="contain">
         <h1 class="headline-pages">Portfolio Sample</h1>
-        <h4 class="content-title">Docotel Company's Web</h4>
+        <h4 class="content-title">PNBP Binmas</h4>
         <div class="portfolio-img">
-          <img src="../../assets/images/portfolio/detail/port-doco.jpg" alt="">
+          <img src="../../assets/images/portfolio/detail/port-pnbp.jpg" alt="">
         </div>
         <div class="content-description">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ipsum vel earum delectus doloremque voluptate quisquam maiores, quam obcaecati molestias iure temporibus, adipisci eum dolor commodi ducimus provident quas iusto.
@@ -29,7 +29,7 @@
 import topNavigation from "@/components/nav-component/top-nav"
 import Footer from "@/components/footer-component/footer.component"
 export default {
-  name: 'portDoco',
+  name: 'portPNBP',
   components: {
     topNavigation,
     Footer
