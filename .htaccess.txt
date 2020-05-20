@@ -1,3 +1,9 @@
+Redirect 301 "/contact" "http://www.snsetiaji.site/"
+Redirect 301 "/docotel" "http://www.snsetiaji.site/"
+Redirect 301 "/pnpb" "http://www.snsetiaji.site/"
+Redirect 301 "/koperasi" "http://www.snsetiaji.site/"
+Redirect 301 "/binmas" "http://www.snsetiaji.site/"
+
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www.)?snsetiaji.site$
 RewriteCond %{REQUEST_URI} !^/dist/
