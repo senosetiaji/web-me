@@ -108,6 +108,12 @@ main{
   background-color: $secondary;
   transition: all .5s ease-in-out;
 }
+.small-text{
+  font-size: 12px;
+}
+.font-color\:muted{
+  color: #888;
+}
 .labels{
   cursor: pointer;
   position: relative;

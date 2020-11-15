@@ -10,7 +10,11 @@
           <img src="../../assets/images/portfolio/detail/port-binmas.jpg" alt="">
         </div>
         <div class="content-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ipsum vel earum delectus doloremque voluptate quisquam maiores, quam obcaecati molestias iure temporibus, adipisci eum dolor commodi ducimus provident quas iusto.
+          BINMAS-PORTAL is a landing-page to access into internal binmas-site with responsive display.
+
+          <p class="small-text font-color:muted">
+            <b>Build with :</b> HTML5, CSS3(SCSS), Javascript (JQuery), Gulp (as CSS Preproccessor)
+          </p>
         </div>
         <router-link to="/">
           <div class="sn-btn">

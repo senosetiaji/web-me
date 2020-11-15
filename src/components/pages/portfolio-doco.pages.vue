@@ -10,7 +10,11 @@
           <img src="../../assets/images/portfolio/detail/port-doco.jpg" alt="">
         </div>
         <div class="content-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, ipsum vel earum delectus doloremque voluptate quisquam maiores, quam obcaecati molestias iure temporibus, adipisci eum dolor commodi ducimus provident quas iusto.
+          Docotel Company Website is a company-web that contain a lot of information about the company, such as location, board the directures of this company, etc.
+          <p class="small-text font-color:muted">
+            <b>Build with :</b> HTML5, CSS3(SCSS), Javascript (JQuery), Gulp (as CSS Preproccessor) <br>
+            <b>Other setup :</b> SEO configuration (google console), Google Analytic, Set up for page load speed. 
+          </p>
         </div>
         <router-link to="/">
           <div class="sn-btn">

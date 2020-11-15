@@ -5,6 +5,9 @@ import PortDoco from '../views/portfolio/PortDoco.vue'
 import PortBinmas from '../views/portfolio/PortBinmas.vue'
 import PortKoperasi from '../views/portfolio/PortKoperasi.vue'
 import PortPNBP from '../views/portfolio/PortPnbp.vue'
+import PortTellysta from '../views/portfolio/PortTellysta.vue'
+import PortCh from '../views/portfolio/PortCh.vue'
+import PortTemanku from '../views/portfolio/PortTemanku.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +44,21 @@ Vue.use(VueRouter)
     path: '/koperasi',
     name: 'portKoperasi',
     component: PortKoperasi
+  },
+  {
+    path: '/tellysta',
+    name: 'portTellysta',
+    component: PortTellysta
+  },
+  {
+    path: '/clearing-house',
+    name: 'portCh',
+    component: PortCh
+  },
+  {
+    path: '/temanku',
+    name: 'portTemanku',
+    component: PortTemanku
   }
 ]
 

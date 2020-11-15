@@ -5,14 +5,15 @@
       <topNavigation />
       <div class="contain">
         <h1 class="headline-pages">Portfolio Sample</h1>
-        <h4 class="content-title">PNBP Binmas</h4>
+        <h4 class="content-title">Tellysta Bookstore</h4>
         <div class="portfolio-img">
-          <img src="../../assets/images/portfolio/detail/port-pnbp.jpg" alt="">
+          <img src="../../assets/images/portfolio/detail/port-tellysta.jpg" alt="">
         </div>
         <div class="content-description">
-          PNBP Binmas is a landing-page to access into an internal site with responsive display.
+          Tellysta is an online-bookstore, you can order books and see the review/rating of it before you buy, and also you can read the synopsis of the book that you want to read.
           <p class="small-text font-color:muted">
-            <b>Build with :</b> HTML5, CSS3(SCSS), Javascript (JQuery), Gulp (as CSS Preproccessor)
+            <b>Build with :</b> HTML5, CSS3(SCSS), Javascript (JQuery), Gulp (as CSS Preproccessor) <br>
+            <b>Other setup :</b> SEO configuration (google console), Google Analytic, Set up for page load speed. 
           </p>
         </div>
         <router-link to="/">
@@ -32,7 +33,7 @@
 import topNavigation from "@/components/nav-component/top-nav"
 import Footer from "@/components/footer-component/footer.component"
 export default {
-  name: 'portPNBP',
+  name: 'portTellysta',
   components: {
     topNavigation,
     Footer
