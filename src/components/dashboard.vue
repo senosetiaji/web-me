@@ -55,6 +55,27 @@
               </div>
             </router-link>
           </div>
+          <div class="portfolio-me--list">
+            <router-link to="/tellysta">
+              <div class="portfolio-img">
+                <img src="../assets/images/portfolio/portfolio5.png" alt="img-portfolio">
+              </div>
+            </router-link>
+          </div>
+          <div class="portfolio-me--list">
+            <router-link to="/clearing-house">
+              <div class="portfolio-img">
+                <img src="../assets/images/portfolio/portfolio6.png" alt="img-portfolio">
+              </div>
+            </router-link>
+          </div>
+          <div class="portfolio-me--list">
+            <router-link to="/temanku">
+              <div class="portfolio-img">
+                <img src="../assets/images/portfolio/portfolio07.png" alt="img-portfolio">
+              </div>
+            </router-link>
+          </div>
         </div>
         <div class="contact-box">
           <h2>"Right now i'm work as <b>Freelancer</b>,<br>
